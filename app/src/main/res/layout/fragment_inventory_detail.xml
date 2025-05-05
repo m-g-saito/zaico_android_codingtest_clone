@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:ignore="HardcodedText"
-    tools:context=".SecondFragment">
+    tools:context=".ui.inventorydetail.InventoryDetailFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="16dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="16dp">
 
+        <!-- ID -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -21,24 +21,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ID" />
+                android:text="@string/label_id" />
 
             <TextView
                 android:id="@+id/textViewId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                tools:text="123456789" />
-
+                android:layout_marginStart="16dp" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginVertical="8dp"
-            android:background="#000000"
-            />
+            android:background="#000000" />
 
+        <!-- タイトル -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -48,51 +46,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="在庫画像" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_marginStart="16dp"
-                android:src="@drawable/no_image" />
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginVertical="8dp"
-            android:background="#000000"
-            />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="8dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="タイトル" />
+                android:text="@string/label_title" />
 
             <TextView
                 android:id="@+id/textViewTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                tools:text="タイトルタイトルタイトル" />
-
+                android:layout_marginStart="16dp" />
         </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginVertical="8dp"
-            android:background="#000000"
-            />
+            android:background="#000000" />
 
+        <!-- 数量 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -102,15 +71,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="数量" />
+                android:text="@string/label_quantity" />
 
             <TextView
                 android:id="@+id/textViewQuantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                tools:text="10000" />
-
+                android:layout_marginStart="16dp" />
         </LinearLayout>
 
     </LinearLayout>

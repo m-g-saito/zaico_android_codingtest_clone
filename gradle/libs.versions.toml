@@ -1,43 +1,92 @@
 [versions]
-agp = "8.8.1"
-kotlin = "1.9.24"
-coreKtx = "1.15.0"
-junit = "4.13.2"
-junitVersion = "1.2.1"
-espressoCore = "3.6.1"
-appcompat = "1.7.0"
-kotlinxCoroutinesAndroid = "1.7.3"
-kotlinxCoroutinesAndroidVersion = "1.6.4"
-kotlinxSerializationJson = "1.5.1"
-ktorClientContentNegotiation = "2.3.0"
-ktorClientCore = "2.0.0"
-material = "1.12.0"
-constraintlayout = "2.2.1"
-navigationFragmentKtx = "2.8.8"
-navigationUiKtx = "2.8.8"
 activity = "1.10.1"
+agp = "8.8.2"
+androidxEspresso = "3.6.1"
+androidxJunit = "1.2.1"
+androidxTestCore = "1.6.1"
+androidxTestMonitor = "1.6.0"
+androidxTestRules = "1.6.1"
+androidxTestRunner = "1.6.2"
+androidxTestServices = "1.4.2"
+androidxTestStorage = "1.4.2"
+appcompat = "1.7.0"
+constraintlayout = "2.2.1"
+coreKtx = "1.16.0"
+coreTesting = "2.2.0"
+coroutines = "1.10.2"
+fragment = "1.8.6"
+gson = "2.13.1"
+hilt = "2.56.2"
+junit = "4.13.2"
+kotlin = "2.1.0"
+lifecycle = "2.8.7"
+material = "1.12.0"
+mockito = "5.17.0"
+mockitoKotlin = "5.4.0"
+navigation = "2.8.9"
+retrofit = "2.11.0"
+truth = "1.4.4"
+turbine = "1.2.0"
 
 [libraries]
-androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
-junit = { group = "junit", name = "junit", version.ref = "junit" }
-androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
-androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
-androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroid" }
-kotlinx-coroutines-android-v164 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinxCoroutinesAndroidVersion" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
-ktor-client-android = { module = "io.ktor:ktor-client-android", version.ref = "ktorClientCore" }
-ktor-client-cio = { module = "io.ktor:ktor-client-cio", version.ref = "ktorClientCore" }
-ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktorClientContentNegotiation" }
-ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktorClientCore" }
-ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktorClientContentNegotiation" }
+# UI components
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
-androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragment" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+
+# Kotlin extensions
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+
+# Lifecycle and ViewModel
+androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+
+# Navigation
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation" }
+
+# Dependency Injection (Hilt)
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
+
+# Networking (Retrofit + Gson)
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-gson-converter = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+# Coroutines
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+
+# Unit Testing
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockito-core = { group = "org.mockito", name = "mockito-core", version.ref = "mockito" }
+mockito-kotlin = { group = "org.mockito.kotlin", name = "mockito-kotlin", version.ref = "mockitoKotlin" }
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTesting" }
+
+# Instrumentation Testing
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxJunit" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxEspresso" }
+androidx-espresso-intents = { group = "androidx.test.espresso", name = "espresso-intents", version.ref = "androidxEspresso" }
+truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
+
+# AndroidX test tools
+androidx-test-core = { group = "androidx.test", name = "core", version.ref = "androidxTestCore" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTestRunner" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTestRules" }
+androidx-test-monitor = { group = "androidx.test", name = "monitor", version.ref = "androidxTestMonitor" }
+androidx-test-services = { group = "androidx.test.services", name = "test-services", version.ref = "androidxTestServices" }
+androidx-test-storage = { group = "androidx.test.services", name = "storage", version.ref = "androidxTestStorage" }
+
+# Fragment testing
+androidx-fragment-testing = { group = "androidx.fragment", name = "fragment-testing", version.ref = "fragment" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+androidx-navigation-safe-args = { id = "androidx.navigation.safeargs", version.ref = "navigation" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">zaico codingtest</string>
-    <string name="first_fragment_label">在庫一覧</string>
-    <string name="second_fragment_label">在庫詳細</string>
+    <string name="inventory_list_fragment_label">在庫一覧</string>
+    <string name="inventory_detail_fragment_label">在庫詳細</string>
+    <string name="text_no_inventories">在庫が見つかりません</string>
+    <string name="label_id">ID</string>
+    <string name="label_title">タイトル</string>
+    <string name="label_quantity">数量</string>
+    <string name="hint_title">例：ノートパソコン</string>
+    <string name="hint_quantity">例：5</string>
+    <string name="button_create">作成する</string>
 </resources>
